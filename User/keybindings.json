@@ -466,6 +466,11 @@
       "command": "-acceptSelectedSuggestion",
       "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
     },
+    {
+      "key": "ctrl+i",
+      "command": "-editor.action.triggerSuggest",
+      "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
     /////////////////////////////////////////////////////
     // Disable equivalent forward and backward commands//
     /////////////////////////////////////////////////////
