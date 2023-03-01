@@ -471,6 +471,16 @@
       "command": "-editor.action.triggerSuggest",
       "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
     },
+    {
+      "key": "k k",
+      "command": "editor.action.inlineSuggest.commit",
+      "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+    },
+    {
+      "key": "tab",
+      "command": "-editor.action.inlineSuggest.commit",
+      "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorTabMovesFocus"
+    },
     /////////////////////////////////////////////////////
     // Disable equivalent forward and backward commands//
     /////////////////////////////////////////////////////
